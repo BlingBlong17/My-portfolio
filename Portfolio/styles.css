@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    Font-family: sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+    
+}
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+    overflow-x: hidden;
+    background-image: linear-gradient(to bottom,#323946, #537180, #2a313f );
+}
+
+body{
+    color: var(--text-color);
+}
+
+
+.header {
+    display: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: #323946;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+}
+
+.portfolio{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+    cursor: default;
+
+}
+
+.nav a{
+    margin:0    ;
+    padding: 15px 30px 15px 30px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: white;
+    margin-left: 4rem;
+    border-radius: 15px;
+}
+
+.nav a:hover, .nav a.active {
+    color: #0ef ;
+    background-color: rgb(3, 2, 2, .3);
+    
+}
+
+
+section{
+    min-height: 50vh;
+    padding: 100px 100px 100px 100px;
+}
+
+.home{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    margin: 0px 200px 0px 0px;
+}
+
+.content h3{
+    font-size: 3rem;
+    font-weight: 750;
+}
+
+.content h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.image{
+    margin: 0;
+    padding: 0;
+}
+.images {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    height: 300px;
+    border-radius: 60%;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: rgb(82, 201, 209) ;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem rgb(82, 201, 209);
+    font-size: 1.6rem;
+    color:rgb(255, 255, 255);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
+}
+
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid rgb(84, 244, 255);
+    border-radius: 50%;
+    font-size: 2rem;
+    color:rgb(84, 244, 255);
+    margin: 1rem 1.5rem 1rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+    background:rgb(84, 244, 255);
+    color:rgb(0, 0, 0);
+    box-shadow: 0 0 1rem rgb(84, 244, 255);
+    border-color: rgb(0, 0, 0);
+}
+
+/* ABOUT CSS ABOUT CSS ABOUT CSS ABOUT CSS */
+
+.abt-img{
+    width: 250px;
+    height: 250px;
+    margin: 0 5rem 0 5rem;
+    position: -webkit-sticky;
+    position: sticky;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #0ef;
+
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.heading{
+    text-align: center;
+    font-size:5rem;
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3{
+    font-size: 3rem;
+    color:aqua;
+}
+
+.about-content p{
+    font-size: 2rem;
+}
+
+.profile-img{
+    width: 250px;
+    height: 150px;
+    border-radius: 2rem;
+}
+
+
+/* PROFILE CSS PROFILE CSS PROFILE CSS PROFILE CSS PROFILE CSS */
+.profile{
+    
+}
+
+.profile h2{
+    margin-bottom: 5rem;
+}
+.profile h4{
+    font-size: 2rem;
+}
+.profile p{
+    font-size: 1.2rem;
+}
+.profile-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem
+}
+
+.profile-box{
+    background-color: #262d41;
+    transition: .5s ease;
+}
+
+.profile-box:hover{
+    box-shadow: 0 0 2rem rgb(0, 0, 0);
+}
+
+.profile-content .profile-box{
+    flex: 1 1 30rem;
+    padding: 4rem 4rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .1rem solid cyan;
+}
+
+/* PROJECT HOBBIES TRAVELS CSS */
+.pht h2{
+    margin-bottom: 3rem;
+}
+
+.pht-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.pht-content .pht-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem cyan;
+    overflow: hidden;
+    display: flex;
+}
+
+.pht-box img{
+    transition: .5s ease;
+}
+.pht-box:hover img{
+    transform: scale(1.1);
+}
+
+.pht-box .pht-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(33, 40, 61));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.pht-box:hover .pht-layer {
+    transform: translateY(0);
+}
+
+.pht-layer h4{
+    font-size: 3rem;
+}
+
+.pht-layer p{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+/*HOBBIES CSS */
+
+/*TRAVEL CSS */
+
